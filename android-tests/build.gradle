@@ -21,4 +21,7 @@ dependencies {
     implementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'junit:junit:4.12'
 
+    // Adding this dependency causes the test to fail with
+    // android.content.res.Resources$NotFoundException: String resource ID #0x7f0b001b
+    implementation project(':mylibrary')
 }
