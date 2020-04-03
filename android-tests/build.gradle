@@ -1,0 +1,24 @@
+apply plugin: 'com.android.test'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        minSdkVersion 26
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    targetProjectPath ':app'
+
+}
+
+dependencies {
+    implementation 'androidx.test.ext:junit:1.1.1'
+    implementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'junit:junit:4.12'
+
+}
